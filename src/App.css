@@ -1,38 +1,135 @@
-.App {
-  text-align: center;
+
+/* App.css */
+
+.todo-app {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #fdfdff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo-form {
   display: flex;
-  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.todo-input {
+  flex: 1;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #fff;
+}
+
+.todo-btn {
+  background-color: wheat;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px 15px;
+  margin-left: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.todo-btn:hover {
+  background-color: #d1cfcf;
+}
+
+.todo-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
 
-.App-link {
-  color: #61dafb;
+.todo-item.completed {
+  text-decoration: line-through;
+  color: #bbb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-item:hover {
+  background-color: #f9f9f9;
+}
+
+.todo-item .todo-item-check {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.todo-item .todo-item-text {
+  flex: 1;
+}
+
+.filter-dropdown {
+  position: relative;
+  margin-top: 20px;
+}
+
+.filter-dropdown-header {
+  background-color: lightpink;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.filter-dropdown-header i {
+  margin-left: 5px;
+  display: flex;
+
+}
+
+.filter-dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+ background-color:#0a0a23;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.filter-dropdown-list button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  color: #333;
+}
+
+.filter-dropdown-list button.active {
+  background-color: #f9f9f9;
+  color: #fff;
+
+}
+
+.filter-dropdown-list button:hover {
+  background-color: #f9f9f9;
+}
+.todospink{
+  color: #F4B4C7;
 }
