@@ -1,8 +1,8 @@
-
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
 function App() {
+    // Declare state variables for the todo items and the current input value
   const [newTodo, setNewTodo] = useState('');
   const [todos, setTodos] = useState([]);
   const [filteredTodos, setFilteredTodos] = useState([]);
